@@ -2,9 +2,9 @@
 
 int main(){
 	std::string name, use;
-	std::cout << "Hello user! What's your name?";
+	std::cout << "Hello user! What's your name? \n :";
 	std::cin >> name;
-	std::cout << "Welcome " << name << "! What do you want to do today? \n";
+	std::cout << "Welcome " << name << "! What do you want to do today? \n :";
 	std::cin >> use;
 	if ( use == "calculator"){
             float first_number;
