@@ -8,4 +8,4 @@ This is a project of mine to further improve my daily life automation and progra
 2. Google search
 3. Light control 
 4. Voice controlling 
-5. SSH-info script
+5. ~~SSH-info script~~
