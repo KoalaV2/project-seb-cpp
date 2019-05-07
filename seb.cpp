@@ -1,12 +1,14 @@
-#include <iostream> 
-
-int main(){
-	std::string name, use;
-	std::cout << "Hello user! What's your name? \n :";
-	std::cin >> name;
-	std::cout << "Welcome " << name << "! What do you want to do today? \n :";
-	std::cin >> use;
-	if ( use == "calculator"){
+#include <iostream>
+int main() {
+    std::string user = "Theo";
+    std::string name;
+    std::string use;
+    std::cout << "Hello user! What's your name? \n :";
+    std::cin >> name;
+    std::cout << "Welcome " << name << "! What do you want to do today? \n :";
+    std::cin >> use; 
+    if ( name == "Theo" ) {
+        if ( use == "open calculator") {
             float first_number;
             float second_number;
             char calc;
@@ -18,20 +20,29 @@ int main(){
             std::cin >> calc;
             std::cout << "\n";
             switch(calc) {
-                case '+':
-                    std::cout << '=' << first_number + second_number << "\n\n";
-                    break;
-                case '-':
-                    std::cout << '=' << first_number - second_number << "\n\n";
-                    break;
-                case '*':
-                    std::cout << '=' << first_number * second_number << "\n\n";
-                    break;
-                case '/':
-                    std::cout << '=' << first_number / second_number << "\n\n";
-                    break;
-                default:
-                    std::cout << "Error, wrong input!";
+            case '+':
+                std::cout << '=' << first_number + second_number << "\n\n";
+                break;
+            case '-':
+                std::cout << '=' << first_number - second_number << "\n\n";
+                break;
+            case '*':
+                std::cout << '=' << first_number * second_number << "\n\n";
+                break;
+            case '/':
+                std::cout << '=' << first_number / second_number << "\n\n";
+                break;
+            default:
+                std::cout << "Error, wrong input!";
             }
+	    
+        }
+	else if ( use == "ssh info" ){
+		system("/bin/bash -c ./ssh.sh");
+	}
+
+    }
+    else {
+        std::cout << "Acces denied.";
     }
 }
