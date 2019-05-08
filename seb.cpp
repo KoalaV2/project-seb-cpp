@@ -1,6 +1,5 @@
 #include <iostream>
 int main() {
-    std::string user = "Theo";
     std::string name;
     std::string use;
     std::cout << "Hello user! What's your name? \n :";
@@ -8,7 +7,7 @@ int main() {
     std::cout << "Welcome " << name << "! What do you want to do today? \n :";
     std::cin >> use; 
     if ( name == "Theo" ) {
-        if ( use == "open calculator") {
+        if ( use == "open_calculator") {
             float first_number;
             float second_number;
             char calc;
@@ -37,7 +36,7 @@ int main() {
             }
 	    
         }
-	else if ( use == "ssh info" ){
+	else if ( use == "ssh_info" ){
 		system("/bin/bash -c ./ssh.sh");
 	}
 
