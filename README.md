@@ -11,4 +11,5 @@ This is a project of mine to further improve my daily life automation and progra
 5. ~~SSH-info script~~ 
 
 CURRENTLY NOT WORKING, STUPID ASS ERROR I NEED TO FIX
-GAHHH, I KNOW THE ISSUE BUT NOT HOW TO FIX IT
+GAHHH, I KNOW THE ISSUE BUT NOT HOW TO FIX IT 
+I messed up badly, it dosent even work without removing a thing now
