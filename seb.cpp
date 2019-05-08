@@ -40,12 +40,12 @@ int main() {
         else if ( use == "ssh_info" ) {
             system("/bin/bash -c ./ssh.sh");
         }
-        else if ( use == "time" ) {
-		time_t tt;
-		struct tm * ti;
-		time(&tt);
-		ti = localtime(&tt);
-		std::cout << "The current time is :" << asctime(ti);
+        else if ( use == "time_info" ) {
+            time_t tt;
+            struct tm * ti;
+            time(&tt);
+            ti = localtime(&tt);
+            std::cout << "The current time is :" << asctime(ti);
         }
         else {
             std::cout << "Acces denied.";
