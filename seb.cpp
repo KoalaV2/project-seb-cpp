@@ -48,7 +48,13 @@ int main() {
             std::cout << "The current time is :" << asctime(ti);
         }
         else {
-            std::cout << "Acces denied.";
+            std::cout << "ERROR, the command which is inputted has not been added yet.";
         }
+    }
+    else if ( name != "Theo"){
+        std::cout << "Access denied. User is not authorized!";
+    }
+    else {
+        std::cout << "ERROR, something went wrong!";
     }
 }
