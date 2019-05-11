@@ -51,7 +51,7 @@ int main() {
             std::cout << "ERROR, the command which is inputted has not been added yet.";
         }
     }
-    else if ( name != "Theo"){
+    else if ( name != "Theo") {
         std::cout << "Access denied. User is not authorized!";
     }
     else {
