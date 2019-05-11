@@ -2,6 +2,8 @@ This is a project of mine to further improve my daily life automation and progra
 
 **warning, optimized for Linux some things may not work for windows**
 
+**THIS IS FOR PERSONAL USE, I WILL NOT MAKE THIS CROSS PLATTFORM**
+
 **Roadmap**
 1. Text to speech
 2. Weather info
