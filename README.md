@@ -10,3 +10,4 @@ This is a project of mine to further improve my daily life automation and progra
 4. Voice controlling 
 5. ~~SSH-info script~~
 6. ~~Date/time info~~
+7. ~~Calculator~~
