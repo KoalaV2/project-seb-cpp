@@ -3,6 +3,7 @@
 int main() {
     std::string name;
     std::string use;
+    float result;
     std::cout << "Hello user! What's your name? \n :";
     std::cin >> name;
     std::cout << "Welcome " << name << "! What do you want to do today? \n :";
@@ -20,21 +21,14 @@ int main() {
             std::cin >> second_number;
             std::cout << "\n";
             switch(calc) {
-            case '+':
-                std::cout << '=' << first_number + second_number << "\n\n";
-                break;
-            case '-':
-                std::cout << '=' << first_number - second_number << "\n\n";
-                break;
-            case '*':
-                std::cout << '=' << first_number * second_number << "\n\n";
-                break;
-            case '/':
-                std::cout << '=' << first_number / second_number << "\n\n";
-                break;
+            case '+': result = first_number + second_number; break;
+	    case '-': result = first_number - second_number; break;
+            case '*': result = first_number * second_number; break;
+            case '/': result = first_number / second_number; break;
             default:
                 std::cout << "Error, wrong input!";
             }
+	    std::cout << '=' << result << "\n";
 
         }
         else if ( use == "ssh_info" ) {
