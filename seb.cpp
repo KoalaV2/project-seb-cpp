@@ -15,20 +15,28 @@ int main() {
             char calc;
             std::cout << "Please enter your first number! \n :";
             std::cin >> first_number;
-	    std::cout << "Please enter how you want to calculate it! \n :";
+            std::cout << "Please enter how you want to calculate it! \n :";
             std::cin >> calc;
-	    std::cout << "Please enter your second number! \n :";
+            std::cout << "Please enter your second number! \n :";
             std::cin >> second_number;
             std::cout << "\n";
             switch(calc) {
-            case '+': result = first_number + second_number; break;
-	    case '-': result = first_number - second_number; break;
-            case '*': result = first_number * second_number; break;
-            case '/': result = first_number / second_number; break;
+            case '+':
+                result = first_number + second_number;
+                break;
+            case '-':
+                result = first_number - second_number;
+                break;
+            case '*':
+                result = first_number * second_number;
+                break;
+            case '/':
+                result = first_number / second_number;
+                break;
             default:
                 std::cout << "Error, wrong input!";
             }
-	    std::cout << '=' << result << "\n";
+            std::cout << '=' << result << "\n";
 
         }
         else if ( use == "ssh_info" ) {
