@@ -11,3 +11,7 @@ This is a project of mine to further improve my daily life automation and progra
 6. ~~SSH-info script~~
 7. ~~Date/time info~~
 8. ~~Calculator~~
+
+
+## needed depencies.
+1. ```notify-cli```
