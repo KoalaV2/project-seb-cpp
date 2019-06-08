@@ -1,12 +1,20 @@
 #include <ctime>
 #include <iostream>
+#include <festival/festival.h>
 int main() {
+    EST_Wave wave;
+    int heap_size = 210000;
+    int load_init_files = 1;
+    festival_initialize(load_init_files, heap_size);
     std::string name;
     std::string use;
     float result;
+
     std::cout << "Hello user! What's your name? \n :";
+    festival_say_text("Hello user! What's your name?");
     std::cin >> name;
     std::cout << "Welcome " << name << "! What do you want to do today? \n :";
+    festival_say_text("What do you want to do today?");
     std::cin >> use;
     if ( name == "Theo" ) {
         if ( use == "open_calculator") {
@@ -14,10 +22,13 @@ int main() {
             float second_number;
             char calc;
             std::cout << "Please enter your first number! \n :";
+            festival_say_text("Please enter your first number");
             std::cin >> first_number;
             std::cout << "Please enter how you want to calculate it! \n :";
+            festival_say_text("please enter how you want to calculate it");
             std::cin >> calc;
             std::cout << "Please enter your second number! \n :";
+            festival_say_text("Please enter your second number");
             std::cin >> second_number;
             std::cout << "\n";
             switch(calc) {
@@ -35,6 +46,7 @@ int main() {
                 break;
             default:
                 std::cout << "Error, wrong input!";
+                festival_say_text("Error, wrong input!");
             }
             std::cout << '=' << result << "\n";
 
@@ -48,6 +60,9 @@ int main() {
             time(&tt);
             ti = localtime(&tt);
             std::cout << "The current time is :" << asctime(ti);
+        }
+        else if ( use == "tts" ) {
+            festival_say_text("Hello world!") // Eventually adding user input.
         }
         else {
             std::cout << "ERROR, the command which is inputted has not been added yet.";
