@@ -62,7 +62,7 @@ int main() {
             std::cout << "The current time is :" << asctime(ti);
         }
         else if ( use == "tts" ) {
-            festival_say_text("Hello world!") // Eventually adding user input.
+            festival_say_text("Hello world!"); // Eventually adding user input.
         }
         else {
             std::cout << "ERROR, the command which is inputted has not been added yet.";
