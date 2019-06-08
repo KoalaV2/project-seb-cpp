@@ -21,7 +21,6 @@ int main() {
         festival_say_text(name.c_str());
         std::cin.ignore();
         std::getline(std::cin, use);
-        // std::cin >> use;
         if ( use == "open calculator") {
             float first_number;
             float second_number;
