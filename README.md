@@ -15,3 +15,8 @@ This is a project of mine to further improve my daily life automation and progra
 
 ## needed depencies.
 1. ```notify-cli```
+
+## how-to
+1. ```git clone https://github.com/KoalaV2/project-seb/```
+2. ```cd project-seb/```
+3. ```make```
