@@ -76,7 +76,7 @@ int main() {
             festival_say_text(stuff.c_str());
         }
         else if ( use == "update") {
-              festival_say_text("Updating the system now!");
+            festival_say_text("Updating the system now!");
             system("yay -Syu --sudoloop");
         }
         else {
