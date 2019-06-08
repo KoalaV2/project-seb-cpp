@@ -78,6 +78,9 @@ int main() {
             festival_say_text("Updating the system now!");
             system("yay -Syu --sudoloop");
         }
+        else if ( use == "weather" ) {
+            system("curl -s wttr.in?format='%C:+%t'");
+        }
         else {
             festival_say_text("Error, the command which is inputted has not been added yet!");
             std::cout << "ERROR, the command which is inputted has not been added yet.";
