@@ -14,7 +14,7 @@ This is a project of mine to further improve my daily life automation and progra
 9. ~~Calculator~~
 
 
-## needed depencies.
+## needed dependencies.
 1. ```notify-cli```
 2. ```festival```
 
