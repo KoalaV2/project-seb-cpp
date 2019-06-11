@@ -6,7 +6,7 @@ This is a project of mine to further improve my daily life automation and progra
 1. Weather info
 2. Google search
 3. Light control 
-4. Voice controlling 
+4. Voice controlling ( Speech to text )
 5. Chat application
 6. ~~Text to speech~~
 7. ~~SSH-info script~~
