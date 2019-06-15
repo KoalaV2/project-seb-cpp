@@ -10,7 +10,6 @@ int main() {
     std::string name;
     std::string use;
     float result;
-
     std::cout << "Hello user! What's your name? \n :";
     festival_say_text("Hello user! What's your name? \n :");
     std::cin >> name;
