@@ -4,7 +4,7 @@
 #include <festival/festival.h>
 int main() {
     EST_Wave wave;
-    int heap_size = 210000;
+    int heap_size = 2100000;
     int load_init_files = 1;
     festival_initialize(load_init_files, heap_size);
     std::string name;
@@ -14,8 +14,8 @@ int main() {
     festival_say_text("Hello user! What's your name? \n :");
     std::cin >> name;
     std::cout << "Welcome " << name;
-    while(1){
-        if ( name == "Theo" ) {
+    if ( name == "Theo" ) {
+        while(1) {
             std::cout << ", What do you want to do today? \n :";
             name.append(", What do you want to do today?");
             festival_say_text(name.c_str());
@@ -89,13 +89,13 @@ int main() {
                 std::cout << "ERROR, the command which is inputted has not been added yet.";
             }
         }
-        else if ( name != "Theo") {
-            festival_say_text("Access denied, user is not authorized");
-            std::cout << "Access denied. User is not authorized!";
-        }
-                else {
-            festival_say_text("ERROR, something went wrong!");
-            std::cout << "ERROR, something went wrong!";
-                }
+    }
+    else if ( name != "Theo") {
+        festival_say_text("Access denied, user is not authorized");
+        std::cout << "Access denied. User is not authorized!";
+    }
+    else {
+        festival_say_text("ERROR, something went wrong!");
+        std::cout << "ERROR, something went wrong!";
     }
 }
