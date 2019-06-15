@@ -81,6 +81,9 @@ int main() {
             else if ( use == "weather" ) {
                 system("curl -s wttr.in?format='%C:+%t'");
             }
+            else if ( use == "exit") {
+                break;
+            }
             else {
                 festival_say_text("Error, the command which is inputted has not been added yet!");
                 std::cout << "ERROR, the command which is inputted has not been added yet.";
