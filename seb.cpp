@@ -15,7 +15,7 @@ int main() {
     std::cin >> name;
     std::cout << "Welcome " << name;
     if ( name == "Theo" ) {
-        while(1) {
+	    do {
             std::cout << ", What do you want to do today? \n :";
             name.append(", What do you want to do today?");
             festival_say_text(name.c_str());
@@ -81,14 +81,12 @@ int main() {
             else if ( use == "weather" ) {
                 system("curl -s wttr.in?format='%C:+%t'");
             }
-            else if ( use == "exit") {
-                break;
-            }
             else {
                 festival_say_text("Error, the command which is inputted has not been added yet!");
                 std::cout << "ERROR, the command which is inputted has not been added yet.";
             }
         }
+	    while (use != "exit");
     }
     else if ( name != "Theo") {
         festival_say_text("Access denied, user is not authorized");
